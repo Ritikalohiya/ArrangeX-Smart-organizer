@@ -1,0 +1,196 @@
+/* ==========================================
+   GLOBAL RESET
+========================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  background: var(--bg-primary);
+
+  color: var(--text-primary);
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* ==========================================
+   LIGHT THEME
+========================================== */
+
+:root {
+  --bg-primary: #f5f7fb;
+  --bg-secondary: #ffffff;
+  --bg-tertiary: #f8fafc;
+
+  --sidebar-bg: #ffffff;
+  --navbar-bg: #ffffff;
+
+  --card-bg: #ffffff;
+  --panel-bg: #ffffff;
+
+  --border-color: #e5e7eb;
+  --border-light: #eef2f7;
+
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
+  --text-muted: #9ca3af;
+
+  --primary: #6366f1;
+  --primary-hover: #4f46e5;
+  --primary-light: #eef2ff;
+
+  --success: #10b981;
+  --success-light: #ecfdf5;
+
+  --warning: #f59e0b;
+  --warning-light: #fffbeb;
+
+  --danger: #ef4444;
+  --danger-light: #fef2f2;
+
+  --info: #0ea5e9;
+  --info-light: #f0f9ff;
+
+  --shadow-sm:
+    0 2px 8px rgba(15, 23, 42, 0.04);
+
+  --shadow-md:
+    0 8px 25px rgba(15, 23, 42, 0.07);
+
+  --shadow-lg:
+    0 15px 40px rgba(15, 23, 42, 0.1);
+
+  --scrollbar-track: #f1f5f9;
+  --scrollbar-thumb: #cbd5e1;
+}
+
+/* ==========================================
+   DARK THEME
+========================================== */
+
+[data-theme="dark"] {
+  --bg-primary: #0b1120;
+  --bg-secondary: #111827;
+  --bg-tertiary: #172033;
+
+  --sidebar-bg: #101827;
+  --navbar-bg: #0f172a;
+
+  --card-bg: #151e2e;
+  --panel-bg: #151e2e;
+
+  --border-color: #263247;
+  --border-light: #1f2a3d;
+
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #8491a7;
+
+  --primary: #818cf8;
+  --primary-hover: #6366f1;
+  --primary-light: #202852;
+
+  --success: #34d399;
+  --success-light: #102c28;
+
+  --warning: #fbbf24;
+  --warning-light: #30250e;
+
+  --danger: #f87171;
+  --danger-light: #351719;
+
+  --info: #38bdf8;
+  --info-light: #102a3a;
+
+  --shadow-sm:
+    0 2px 8px rgba(0, 0, 0, 0.2);
+
+  --shadow-md:
+    0 8px 25px rgba(0, 0, 0, 0.25);
+
+  --shadow-lg:
+    0 15px 40px rgba(0, 0, 0, 0.35);
+
+  --scrollbar-track: #111827;
+  --scrollbar-thumb: #374151;
+}
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 10px;
+}
+
+/* ==========================================
+   GLOBAL TRANSITION
+========================================== */
+
+body,
+.app,
+.main-area,
+.app-content,
+.dashboard-panel,
+.stat-card,
+.navbar,
+.sidebar,
+.mobile-menu,
+input,
+select,
+textarea,
+button {
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease;
+}

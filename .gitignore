@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+
+# Logs 
+*.log
+npm-debug.log*
+
+# Coverage and temporary files
+coverage/
+tmp/
+temp/
+
+# OS files
+.DS_Store

@@ -1,0 +1,460 @@
+.colleges-page {
+  min-height: 100vh;
+  padding: 30px;
+  background: #050816;
+  color: #fff;
+}
+
+/* ================= HEADER ================= */
+
+.colleges-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.colleges-header h1 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.colleges-header p {
+  margin: 7px 0 0;
+  color: #8f9bb3;
+}
+
+/* ================= BUTTON ================= */
+
+.add-college-btn {
+  border: none;
+  padding: 12px 20px;
+  border-radius: 9px;
+  background: #00e5ff;
+  color: #031014;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.add-college-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 229, 255, 0.25);
+}
+
+/* ================= STATS ================= */
+
+.college-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+.college-stat-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  border: 1px solid #1d2740;
+  border-radius: 14px;
+  background: #0b1020;
+}
+
+.stat-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: rgba(0, 229, 255, 0.1);
+  font-size: 22px;
+}
+
+.college-stat-card span {
+  color: #8995ad;
+  font-size: 13px;
+}
+
+.college-stat-card h2 {
+  margin: 5px 0 0;
+  font-size: 25px;
+}
+
+/* ================= TOOLBAR ================= */
+
+.college-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.college-search {
+  width: 420px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 15px;
+  border: 1px solid #1d2740;
+  border-radius: 9px;
+  background: #0b1020;
+  color: #77839a;
+}
+
+.college-search input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+}
+
+.college-search input::placeholder {
+  color: #66738b;
+}
+
+.college-count {
+  color: #8995ad;
+  font-size: 14px;
+}
+
+/* ================= TABLE ================= */
+
+.college-table-card {
+  overflow: hidden;
+  border: 1px solid #1d2740;
+  border-radius: 14px;
+  background: #0b1020;
+}
+
+.table-header {
+  padding: 22px;
+  border-bottom: 1px solid #1d2740;
+}
+
+.table-header h2 {
+  margin: 0;
+  font-size: 19px;
+}
+
+.table-header p {
+  margin: 6px 0 0;
+  color: #8995ad;
+  font-size: 13px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #080d1b;
+}
+
+th {
+  padding: 15px 18px;
+  text-align: left;
+  color: #7f8ba3;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+td {
+  padding: 17px 18px;
+  border-top: 1px solid #1a2338;
+  color: #c8d0df;
+  font-size: 13px;
+}
+
+tbody tr:hover {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* ================= COLLEGE NAME ================= */
+
+.college-name-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.college-avatar {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: rgba(0, 229, 255, 0.12);
+  color: #00e5ff;
+  font-weight: 700;
+}
+
+.college-name-cell strong {
+  display: block;
+  color: #fff;
+}
+
+.college-name-cell small {
+  display: block;
+  margin-top: 3px;
+  color: #758198;
+}
+
+/* ================= CODE ================= */
+
+.code-badge {
+  padding: 5px 9px;
+  border-radius: 6px;
+  background: #151d31;
+  color: #00e5ff;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* ================= ACTIONS ================= */
+
+.action-buttons {
+  display: flex;
+  gap: 7px;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 7px 11px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.edit-btn {
+  border: 1px solid #1c8ba0;
+  background: transparent;
+  color: #00e5ff;
+}
+
+.delete-btn {
+  border: 1px solid #6f2932;
+  background: transparent;
+  color: #ff6b78;
+}
+
+.edit-btn:hover {
+  background: rgba(0, 229, 255, 0.08);
+}
+
+.delete-btn:hover {
+  background: rgba(255, 80, 95, 0.08);
+}
+
+/* ================= FORM OVERLAY ================= */
+
+.college-form-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.72);
+}
+
+.college-form-card {
+  width: 650px;
+  max-width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  border: 1px solid #26334e;
+  border-radius: 16px;
+  background: #0b1020;
+  box-shadow: 0 20px 70px rgba(0, 0, 0, 0.5);
+}
+
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 22px;
+  border-bottom: 1px solid #1d2740;
+}
+
+.form-header h2 {
+  margin: 0;
+}
+
+.form-header p {
+  margin: 6px 0 0;
+  color: #8995ad;
+  font-size: 13px;
+}
+
+.close-btn {
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 8px;
+  background: #151d31;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* ================= FORM ================= */
+
+form {
+  padding: 22px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.full-width {
+  grid-column: span 2;
+}
+
+.form-group label {
+  color: #b8c2d5;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  border: 1px solid #26334e;
+  outline: none;
+  border-radius: 8px;
+  background: #070c18;
+  color: #fff;
+  font-size: 13px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #00e5ff;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+/* ================= FORM ACTIONS ================= */
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.cancel-btn,
+.save-btn {
+  padding: 11px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.cancel-btn {
+  border: 1px solid #26334e;
+  background: transparent;
+  color: #aab4c7;
+}
+
+.save-btn {
+  border: none;
+  background: #00e5ff;
+  color: #031014;
+}
+
+/* ================= EMPTY ================= */
+
+.empty-state {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.empty-icon {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+.empty-state h3 {
+  margin: 0 0 8px;
+}
+
+.empty-state p {
+  margin-bottom: 20px;
+  color: #8995ad;
+}
+
+.loading {
+  padding: 60px;
+  text-align: center;
+  color: #8995ad;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+  .college-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .college-toolbar {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .college-search {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 650px) {
+  .colleges-page {
+    padding: 18px;
+  }
+
+  .colleges-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .full-width {
+    grid-column: span 1;
+  }
+
+  .college-form-card {
+    max-height: 95vh;
+  }
+}
