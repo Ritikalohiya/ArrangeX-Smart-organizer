@@ -1,19 +1,19 @@
 # Dependencies
 node_modules/
 
-# Environment files and secrets
+# Environment files
 .env
 .env.*
 !.env.example
 
-# Logs 
+# Build output
+dist/
+build/
+coverage/  
+
+# Logs
 *.log
 npm-debug.log*
 
-# Coverage and temporary files
-coverage/
-tmp/
-temp/
-
-# OS files
-.DS_Store
+# Editor and OS files
+.DS_Store 
